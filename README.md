@@ -4,6 +4,7 @@
 
 void update_prices(float stock[], int count, int day)
 {
+
     int j, sign;
 
     float* ptr = &stock[0];
@@ -30,7 +31,9 @@ void update_prices(float stock[], int count, int day)
 
 void print_prices(float stock[], char NAME[][20], int count)
 {   
+
     int i;
+    
     printf("Current market prices:\n");
     for(i = 0; i < count; i++)
     {
@@ -40,7 +43,9 @@ void print_prices(float stock[], char NAME[][20], int count)
 
 void print_shares(int shares[] , char NAME[][20], int count)
 {
+
     int i;
+    
     printf("Your current holdings:\n");
     for(i = 0; i < count; i++)
     {
@@ -50,6 +55,7 @@ void print_shares(int shares[] , char NAME[][20], int count)
 
 void BUY(float stock[], float *ptr, int shares[])
 {
+
     int index, qty;
 
     printf("Enter the stock number to buy: ");
@@ -86,6 +92,7 @@ void BUY(float stock[], float *ptr, int shares[])
 
 void SELL(float stock[], float *ptr, int shares[])
 {
+
     int index, qty;
 
     printf("Enter the stock number to sell: ");
@@ -120,6 +127,7 @@ void SELL(float stock[], float *ptr, int shares[])
 
 void END(float *ptr)
 {
+
     if (*ptr - 10000 > 0)
     {
         printf("Trading period complete. Total profit after 10 days: %.2f" , *ptr - 10000);
