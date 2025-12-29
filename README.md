@@ -137,7 +137,7 @@ void END(float *ptr)
 int main(){
 
     int day, shares[5] = {0, 0, 0, 0, 0}, option, i;
-
+            
     float Stock[5] = {1000, 1500, 2000, 2500, 3000}, cash = 10000;
     float* ptr = &cash;
 
